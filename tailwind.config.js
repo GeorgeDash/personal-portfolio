@@ -43,15 +43,6 @@ module.exports = {
       transitionDuration: {
         '375': '375ms'
       },
-      keyframes: {
-        'fade-in': {
-          '0%': {filter: 'opacity(0)'},
-          '100%': {filter: 'opacity(1)'}
-        },
-      },
-      animation: {
-        'fade-in': 'fade-in 1s ease-in-out linear forwards'
-      },
       colors: {
         "beagle": "#b49278"
       },
