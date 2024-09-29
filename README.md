@@ -1,1 +1,1 @@
-Check out my portfolio! (still in progress) -> [georgedash.github.io](georgedash.github.io)
+Check out my portfolio! (still in progress) -> https://georgedash.github.io
