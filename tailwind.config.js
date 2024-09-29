@@ -18,7 +18,7 @@ module.exports = {
         'homepage': "url('../img/homepage.jpg')",
       },
       fontFamily: {
-        "sans": "'Inter'"
+        "sans": "'Outfit'"
       },
       width: {
         "40-p": "40%",
