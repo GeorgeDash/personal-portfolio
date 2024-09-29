@@ -4,21 +4,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Personal Portfolio</title>
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="build/css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="build/img/favicon.ico" type="image/x-icon">
     </head>
     <body class="bg-beagle bg-cover bg-center bg-no-repeat">
-        <header class="flex items-center justify-center p-4">
-            <a href="index.html" id="navbar_brand" class="">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPQiaHuEfKqQ_ZG2uydfL2ty6PhzLnDLt9B78RMGwFLCyJwkQE4lRkvQrOWDHFpYVfd1A&usqp=CAU"
-                    class="md:h-51-p rounded-full sm:h-11 sm-l:h-12" />
+        <header class="flex items-center justify-center p-4 relative">
+            <a href="index.html" id="navbar_brand">
+                <img src="build/img/profile.png"
+                    class="md:h-51-p rounded-full sm:h-11 sm-l:h-12 absolute left-2 top-4" />
             </a>
             <nav
-                class="border-soild sticky flex rounded-full border border-white/[.5] p-3 sm:ml-15-r sm:w-full sm:justify-evenly sm:text-sm sm-l:ml-15-r sm-l:w-80-p sm-l:text-md md:ml-0 md:w-fit md:justify-center md:space-x-10">
+                class="border-soild flex rounded-full border border-white/[.5] p-3 sm:ml-15-r sm:w-full sm:justify-evenly sm:text-sm sm-l:ml-15-r sm-l:w-80-p sm-l:text-md md:ml-0 md:w-fit md:justify-center md:space-x-10 md:fixed top-4 z-20">
                 <a href="#home"
                     class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black">Home</a>
                 <a href="#"
@@ -29,8 +28,12 @@
             </nav>
         </header>
         <main class="mx-auto flex flex-col items-center">
+            <section id="home" class="mt-20 flex h-96 flex-col items-center justify-center border sm:w-full sm-l:w-90-p lg:w-75-p relative">
+                <h1 class="animate-fade-in sm:text-4xl sm-m:text-5xl font-semibold relative bottom-25-p">Hey there! 👋</h1>
+                <p class="text-center text-xl relative bottom-5">My name's George and I'm (definitely) a professional web designer! 😎</p>
+            </section>
             <section id="home" class="mt-10 flex h-96 flex-col items-center justify-center border sm:w-full sm-l:w-90-p lg:w-75-p relative">
-                <h1 class="animate-fade-in text-5xl font-semibold relative bottom-25-p">Hey there! 👋</h1>
+                <h1 class="animate-fade-in sm:text-4xl sm-m:text-5xl font-semibold relative bottom-25-p">Hey there! 👋</h1>
                 <p class="text-center text-xl relative bottom-5">My name's George and I'm (definitely) a professional web designer! 😎</p>
             </section>
         </main>
