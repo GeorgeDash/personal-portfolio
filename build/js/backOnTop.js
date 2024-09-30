@@ -1,5 +1,5 @@
 history.scrollRestoration = "manual";
 
-$(window).on('beforeunload', function(){
-      $(window).scrollTop(0);
+window.addEventListener('load', function() {
+    window.scrollTo(0, 0);
 });
