@@ -44,7 +44,8 @@ module.exports = {
         '375': '375ms'
       },
       colors: {
-        "beagle": "#b49278"
+        "cadet-gray": "#8da1b9",
+        "dark-cadet-gray": "#7a92ad"
       },
       transitionProperty: {
         'width': 'width'
