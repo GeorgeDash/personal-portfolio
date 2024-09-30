@@ -5,14 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="build/css/style.css" />
 
-        <!-- Font -->
+        <!-- Font and icons -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
             rel="stylesheet"
         />
-        <!-- Font -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Font and icons -->
 
         <link
             rel="shortcut icon"
@@ -25,17 +26,19 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!-- CDN sources for AOS -->
 
+        <!-- Always load page on top -->
         <script src="build/js/backOnTop.js" defer></script>
+        <!-- Always load page on top -->
         <title>Personal Portfolio</title>
     </head>
-    <body class="bg-cadet-gray bg-cover bg-center bg-no-repeat">
+    <body class="bg-cadet-gray bg-cover bg-center bg-no-repeat overflow-x-hidden">
         <header
-            class="z-10 flex w-screen items-center justify-center p-4 sm:fixed"
+            class="z-10 flex w-screen items-center justify-center p-4 fixed"
         >
             <a href="index.html" id="navbar_brand">
                 <img
                     src="build/img/profile.png"
-                    class="md:h-51-p left-2 top-4 z-50 rounded-full sm:h-11 sm-l:h-12 sm:fixed"
+                    class="md:h-51-p left-2 top-4 z-50 rounded-full sm:h-11 sm-l:h-12 absolute"
                 />
             </a>
             <nav
@@ -60,18 +63,26 @@
         </header>
         <main class="mx-auto flex flex-col items-center">
             <section
-                id="home"
-                class="relative mt-20 flex flex-col items-center justify-center sm:w-full sm-l:w-90-p lg:w-75-p scroll-mt-[76px] h-screen border" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="400"
+                id="welcome"
+                class="relative mt-20 flex flex-col items-center justify-center w-full h-screen" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="400"
             >
                 <h1
-                    class="relative bottom-10 font-semibold sm:text-4xl sm-m:text-5xl"
+                    class="relative bottom-15-p font-semibold sm:text-4xl sm-m:text-5xl"
                 >
                     Hey there! 👋
                 </h1>
-                <p class="text-center text-xl relative">
+                <p class="text-center text-xl relative bottom-10-p">
                     My name's George and I'm (definitely) a professional web
                     designer! 😎
                 </p>
+            </section>
+            <section id="home" class="border w-full h-screen scroll-mt-20 text-center">
+                <h1 class="text-4xl pb-5" data-aos="fade-left" data-aos-delay="500">GeorgeDash</h1>
+                <p class="text-lg" data-aos="fade-right" data-aos-delay="500" data-aos-duration="800">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit voluptatum odio ut, perferendis laboriosam voluptas eius at dicta in facilis, non maxime. Saepe temporibus tempore perferendis rerum quisquam maiores consectetur.
+                Nostrum repellat reprehenderit nemo molestiae a atque dolore ullam maxime debitis minus harum mollitia veniam minima, nobis ratione sint culpa, totam aliquam eveniet provident non tenetur amet libero modi? Maxime?
+                A autem, nulla tempore quidem corrupti odit sit porro perspiciatis officiis accusantium soluta et aperiam rem aliquam, ipsam consequuntur earum pariatur amet inventore neque ratione nesciunt, harum delectus sequi. Necessitatibus!
+                Adipisci, veniam ipsum? Deserunt architecto dignissimos, modi consequuntur necessitatibus aut eum saepe temporibus sunt, atque recusandae quae aperiam expedita laudantium sequi. Nostrum ipsum repellendus eligendi voluptate aperiam, voluptatum illum neque!
+                Corrupti asperiores ducimus qui sint enim ipsa, eaque quo vero ipsum quia? Id numquam exercitationem cupiditate ipsum laboriosam ipsa corrupti impedit ea, sit animi delectus in deleniti possimus illum cum?</p>
             </section>
         </main>
 
