@@ -8,21 +8,17 @@
         <!-- Font and icons -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-            rel="stylesheet"
-        />
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap" rel="stylesheet" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
         <!-- Font and icons -->
 
-        <link
-            rel="shortcut icon"
-            href="build/img/favicon.ico"
-            type="image/x-icon"
-        />
+        <link rel="shortcut icon" href="build/img/favicon.ico" type="image/x-icon" />
 
         <!-- CDN sources for AOS -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!-- CDN sources for AOS -->
 
@@ -31,83 +27,102 @@
         <!-- Always load page on top -->
         <title>Personal Portfolio</title>
     </head>
-    <body class="bg-cadet-gray bg-cover bg-center bg-no-repeat overflow-x-hidden">
-        <header
-            class="z-10 flex w-screen items-center justify-center p-4 fixed"
-        >
+    <body class="overflow-x-hidden bg-cadet-gray bg-cover bg-center bg-no-repeat">
+        <header class="fixed z-10 flex w-screen items-center justify-center p-4">
             <a href="index.html" id="navbar_brand">
-                <img
-                    src="build/img/profile.png"
-                    class="md:h-51-p left-2 top-4 z-50 rounded-full sm:h-11 sm-l:h-12 absolute"
-                />
+                <img src="build/img/profile.png"
+                    class="md:h-51-p absolute left-2 top-4 z-50 rounded-full sm:h-11 sm-l:h-12" />
             </a>
             <nav
-                class="border-soild flex rounded-full p-3 sm:w-75-p sm sm:justify-evenly sm:text-sm sm-l:w-80-p sm-l:text-md md:ml-0 md:w-fit md:justify-center md:space-x-10 sm:ml-15-r sm-m:ml-25-p sm-l:ml-15-r bg-dark-cadet-gray"
-            >
-                <a
-                    href="#home"
-                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black"
-                    >Home</a
-                >
-                <a
-                    href="#about_me"
-                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black"
-                    >About me</a
-                >
-                <a
-                    href="#"
-                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black"
-                    >???</a
-                >
+                class="border-soild sm flex rounded-full bg-dark-cadet-gray p-3 sm:ml-15-r sm:w-75-p sm:justify-evenly sm:text-sm sm-m:ml-25-p sm-l:ml-15-r sm-l:w-80-p sm-l:text-md md:ml-0 md:w-fit md:justify-center md:space-x-10">
+                <a href="#home"
+                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black">Home</a>
+                <a href="#about_me"
+                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black">About
+                    me</a>
+                <a href="#"
+                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black">???</a>
             </nav>
         </header>
         <main class="mx-auto flex flex-col items-center">
-            <section
-                id="welcome"
-                class="relative mt-20 flex flex-col items-center justify-center w-screen h-screen" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="400"
-            >
-                <h1
-                    class="relative bottom-15-p font-semibold sm:text-4xl sm-m:text-5xl"
-                >
+            <section id="home" class="relative mt-20 flex h-screen w-screen flex-col items-center justify-center"
+                data-aos="zoom-in" data-aos-duration="900" data-aos-delay="400">
+                <h1 class="relative bottom-15-p font-semibold sm:text-4xl sm-m:text-5xl">
                     Hey there! 👋
                 </h1>
-                <p class="text-center text-xl relative bottom-10-p">
+                <p class="relative bottom-10-p text-center text-xl">
                     My name's George and I'm (definitely) a professional web
                     designer! 😎
                 </p>
             </section>
-            <section id="home" class="border w-full h-screen scroll-mt-20 text-center flex flex-col justify-center items-center sm:flex-1 md:flex-auto">
-                <div class="sm:w-full sm-m:w-90-p sm-l:w-75-p md:w-50-p lg:w-25-p border h-16 flex justify-evenly space-x-5 items-center text-5xl sm:mt-14 mb-7 rounded-full" data-aos="fade-down" data-aos-delay="500" data-aos-duration="800">
-                    <a href="https://www.youtube.com/@georgecraft225" target="_blank" class="hover:scale-125 transition-all duration-375">
-                        <i class='bx bxl-tiktok bg-gradient-to-br from-cyan-600 to-pink-800 absolute -translate-y-50-p text-transparent bg-clip-text -translate-x-50-p'></i>
-                    </a>
-                    <a href="https://www.youtube.com/@georgecraft225" target="_blank" class="hover:scale-125 transition-all duration-375">
-                        <i class='bx bxl-instagram bg-gradient-to-br from-amber-300 via-pink-600 to-purple-700 text-transparent bg-clip-text absolute -translate-y-50-p -translate-x-50-p'></i>
-                    </a>
-                    <a href="https://www.youtube.com/@georgecraft225" target="_blank" class="hover:scale-125 transition-all duration-375">
-                        <i class='bx bxl-youtube text-red-700 absolute -translate-y-50-p -translate-x-50-p'></i>
-                    </a>
-                    <a href="https://www.youtube.com/@georgecraft225" target="_blank" class="hover:scale-125 transition-all duration-375">
-                        <i class='bx bxl-github text-black absolute -translate-y-50-p -translate-x-50-p'></i>
-                    </a>
-                    <a href="https://www.youtube.com/@georgecraft225" target="_blank" class="hover:scale-125 transition-all duration-375">
-                        <i class='bx bxl-discord-alt text-[#5865f2] absolute -translate-y-50-p -translate-x-50-p'></i>
-                    </a>
+            <section id="about_me"
+                class="flex h-screen w-full flex-col items-center justify-center text-center sm:flex-1 md:flex-auto sm:scroll-mt-20">
+                <div class="social-media relative sm:w-full sm-m:w-90-p sm-l:w-75-p md:w-50-p lg:w-35-p"
+                    data-aos="fade-down" data-aos-delay="500" data-aos-duration="800" data-aos-anchor="#home"
+                    data-aos-anchor-placement="bottom-bottom">
+                    <img src="build/img/boy.png" alt="lying boy"
+                        class="[1200px]:-top-1 absolute -right-2 w-20-p min-[610px]:-top-2 min-[710px]:-top-4 md:top-0 min-[930px]:-top-2 lg:top-2 xl:-top-2" />
+                    <div class="mb-7 flex h-16 items-center justify-evenly space-x-5 rounded-full border text-5xl sm:mt-14">
+                        <a href="https://www.youtube.com/@georgecraft225" target="_blank"
+                            class="transition-all duration-375 hover:scale-125">
+                            <i
+                                class="bx bxl-tiktok absolute -translate-x-50-p -translate-y-50-p bg-gradient-to-br from-cyan-600 to-pink-800 bg-clip-text text-transparent"></i>
+                        </a>
+                        <a href="https://www.instagram.com/georgedash09/" target="_blank"
+                            class="transition-all duration-375 hover:scale-125">
+                            <i
+                                class="bx bxl-instagram absolute -translate-x-50-p -translate-y-50-p bg-gradient-to-br from-amber-300 via-pink-600 to-purple-700 bg-clip-text text-transparent"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@georgecraft225" target="_blank"
+                            class="transition-all duration-375 hover:scale-125">
+                            <i class="bx bxl-youtube absolute -translate-x-50-p -translate-y-50-p text-red-700"></i>
+                        </a>
+                        <a href="https://github.com/GeorgeDash" target="_blank"
+                            class="transition-all duration-375 hover:scale-125">
+                            <i class="bx bxl-github absolute -translate-x-50-p -translate-y-50-p text-black"></i>
+                        </a>
+                        <a href="https://discordapp.com/users/1044955127368396841" target="_blank"
+                            class="transition-all duration-375 hover:scale-125">
+                            <i class="bx bxl-discord-alt absolute -translate-x-50-p -translate-y-50-p text-[#5865f2]"></i>
+                        </a>
+                    </div>
                 </div>
-                <h1 class="text-4xl pb-5" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">GeorgeDash</h1>
-                <p class="text-lg" data-aos="fade-right" data-aos-delay="500" data-aos-duration="800">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit voluptatum odio ut, perferendis laboriosam voluptas eius at dicta in facilis, non maxime. Saepe temporibus tempore perferendis rerum quisquam maiores consectetur.
-                Nostrum repellat reprehenderit nemo molestiae a atque dolore ullam maxime debitis minus harum mollitia veniam minima, nobis ratione sint culpa, totam aliquam eveniet provident non tenetur amet libero modi? Maxime?
-                A autem, nulla tempore quidem corrupti odit sit porro perspiciatis officiis accusantium soluta et aperiam rem aliquam, ipsam consequuntur earum pariatur amet inventore neque ratione nesciunt, harum delectus sequi. Necessitatibus!
-                Adipisci, veniam ipsum? Deserunt architecto dignissimos, modi consequuntur necessitatibus aut eum saepe temporibus sunt, atque recusandae quae aperiam expedita laudantium sequi. Nostrum ipsum repellendus eligendi voluptate aperiam, voluptatum illum neque!
-                Corrupti asperiores ducimus qui sint enim ipsa, eaque quo vero ipsum quia? Id numquam exercitationem cupiditate ipsum laboriosam ipsa corrupti impedit ea, sit animi delectus in deleniti possimus illum cum?</p>
+                <h1 class="pb-3 text-4xl" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
+                    GeorgeDash
+                </h1>
+                <h2 class="pb-5 text-2xl italic" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
+                    Student, Ballet dancer, Programmer, Singer (kinda)
+                </h2>
+                <p class="text-lg sm:w-full min-[576px]:w-50-p text-left" data-aos="fade-right" data-aos-delay="500" data-aos-duration="800">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Suscipit voluptatum odio ut, perferendis laboriosam voluptas
+                    eius at dicta in facilis, non maxime. Saepe temporibus
+                    tempore perferendis rerum quisquam maiores consectetur.
+                    Nostrum repellat reprehenderit nemo molestiae a atque dolore
+                    ullam maxime debitis minus harum mollitia veniam minima,
+                    nobis ratione sint culpa, totam aliquam eveniet provident
+                    non tenetur amet libero modi? Maxime? A autem, nulla tempore
+                    quidem corrupti odit sit porro perspiciatis officiis
+                    accusantium soluta et aperiam rem aliquam, ipsam
+                    consequuntur earum pariatur amet inventore neque ratione
+                    nesciunt, harum delectus sequi. Necessitatibus! Adipisci,
+                    veniam ipsum? Deserunt architecto dignissimos, modi
+                    consequuntur necessitatibus aut eum saepe temporibus sunt,
+                    atque recusandae quae aperiam expedita laudantium sequi.
+                    Nostrum ipsum repellendus eligendi voluptate aperiam,
+                    voluptatum illum neque! Corrupti asperiores ducimus qui sint
+                    enim ipsa, eaque quo vero ipsum quia? Id numquam
+                    exercitationem cupiditate ipsum laboriosam ipsa corrupti
+                    impedit ea, sit animi delectus in deleniti possimus illum
+                    cum?
+                </p>
             </section>
         </main>
 
         <!-- AOS Library -->
         <script>
-            AOS.init();
+            AOS.init()
         </script>
         <!-- AOS Library -->
-
     </body>
 </html>

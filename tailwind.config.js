@@ -18,7 +18,7 @@ module.exports = {
         'homepage': "url('../img/homepage.jpg')",
       },
       fontFamily: {
-        "sans": "'Outfit'"
+        "sans": "'Spline Sans'",
       },
       width: {
         "40-p": "40%",
@@ -34,6 +34,7 @@ module.exports = {
         "15-p": "15%",
         "20-p": "20%",
         "25-p": "25%",
+        "35-p": "35%",
         "40-p": "40%",
         "50-p": "50%",
         "80-p": "80%",
