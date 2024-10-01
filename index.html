@@ -8,9 +8,6 @@
         <!-- Font and icons -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap" rel="stylesheet" />
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
         <!-- Font and icons -->
@@ -25,23 +22,25 @@
         <!-- Always load page on top -->
         <script src="build/js/backOnTop.js" defer></script>
         <!-- Always load page on top -->
+
         <title>Personal Portfolio</title>
     </head>
-    <body class="overflow-x-hidden bg-cadet-gray bg-cover bg-center bg-no-repeat">
-        <header class="fixed z-10 flex w-screen items-center justify-center p-4">
+    <body class="bg-cadet-gray bg-cover bg-center bg-no-repeat h-screen w-screen overflow-x-hidden">
+        <header class="z-10 flex w-screen items-center justify-center p-4 fixed">
             <a href="index.html" id="navbar_brand">
                 <img src="build/img/profile.png"
                     class="md:h-51-p absolute left-2 top-4 z-50 rounded-full sm:h-11 sm-l:h-12" />
             </a>
             <nav
                 class="border-soild sm flex rounded-full bg-dark-cadet-gray p-3 sm:ml-15-r sm:w-75-p sm:justify-evenly sm:text-sm sm-m:ml-25-p sm-l:ml-15-r sm-l:w-80-p sm-l:text-md md:ml-0 md:w-fit md:justify-center md:space-x-10">
-                <a href="#home"
-                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black">Home</a>
                 <a href="#about_me"
-                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black">About
-                    me</a>
-                <a href="#"
-                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black">???</a>
+                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black">About me</a>
+                <a href="#projects"
+                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black">Projects</a>
+                <a href="https://youtu.be/uHgt8giw1LY?si=7jQR4ReXg8plooSC" target="_blank"
+                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black">
+                    <i>???</i>
+                </a>
             </nav>
         </header>
         <main class="mx-auto flex flex-col items-center">
@@ -56,12 +55,9 @@
                 </p>
             </section>
             <section id="about_me"
-                class="flex h-screen w-full flex-col items-center justify-center text-center sm:flex-1 md:flex-auto scroll-mt-5">
-                <div class="social-media relative sm:w-full sm-m:w-90-p sm-l:w-75-p md:w-50-p lg:w-35-p"
-                    data-aos="fade-down" data-aos-delay="500" data-aos-duration="800" data-aos-anchor="#home"
-                    data-aos-anchor-placement="bottom-bottom">
-                    <img src="build/img/boy.png" alt="lying boy"
-                        class="[1200px]:-top-1 absolute -right-2 w-20-p min-[610px]:-top-2 min-[710px]:-top-4 md:top-0 min-[930px]:-top-2 lg:top-2 xl:-top-2 sm:top-3" />
+                class="flex h-screen w-full flex-col items-center justify-center text-center sm:flex-1 md:flex-auto lg:scroll-mt-10 relative">
+                <div class="relative sm:w-full sm-m:w-90-p sm-l:w-75-p md:w-50-p lg:w-35-p" id="social_media"
+                    data-aos="fade-down" data-aos-delay="500" data-aos-duration="800">
                     <div class="mb-7 flex h-16 items-center justify-evenly space-x-5 rounded-full border text-5xl sm:mt-14">
                         <a href="https://www.youtube.com/@georgecraft225" target="_blank"
                             class="transition-all duration-375 hover:scale-125">
@@ -90,14 +86,23 @@
                 <h1 class="pb-3 text-4xl" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
                     GeorgeDash
                 </h1>
-                <h2 class="pb-20 text-2xl italic" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
-                    Student, Ballet dancer, Programmer, Singer (kinda)
+                <h2 class="text-2xl italic" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
+                    student, ballet dancer, programmer, singer (kinda)
                 </h2>
-                <p class="text-lg sm:w-full min-[576px]:w-75-p text-justify relative lg:right-10-p p-10 rounded-xl shadow-2xl" data-aos="fade-right" data-aos-delay="500" data-aos-duration="800">
-                    Hello everyone!
-                    <br>Like you already know, my name's George and I'm from Bulgaria. I'm actually still a student in 9th grade and that's why this portfolio is my biggest accomplishment. I have been learning HTML and CSS for around 2 years, but since I have school, is very hard to find times to practice my programming skills. I'm looking forward to learning JavaScript because I know that it'll bring a lot more functionality to my sites.
-                    <br>Besides programming, I like to read, play video games, go outside and study (LOL, I know, <i>what a nerd</i>) in my freetime. 
-                </p>
+                <div class="w-full flex flex-row-reverse max-[920px]:flex-col-reverse justify-center items-center flex-1 sm:mt-10 lg:absolute lg:top-60-p">
+                    <img src="build/img/boy.png" alt="lying boy" data-aos="fade-left"
+                    data-aos-delay="500" data-aos-duration="800"/>
+                    <p class="text-lg sm:w-90-p min-[576px]:w-75-p text-justify p-10 rounded-xl shadow-2xl" data-aos="fade-right"
+                        data-aos-delay="500" data-aos-duration="800">
+                        Hello everyone!
+                        <br>Like you already know, my name's George and I'm from Bulgaria. I'm actually still a student in 9th grade and
+                        that's why this portfolio is my biggest accomplishment. I have been learning HTML and CSS for around 2 years, but
+                        since I have school, is very hard to find times to practice my programming skills. I'm looking forward to learning
+                        JavaScript because I know that it'll bring a lot more functionality to my sites.
+                        <br>Besides programming, I like to read, play video games, go outside and study (LOL, I know, <i>what a nerd</i>) in
+                        my freetime.
+                    </p>
+                </div>
             </section>
         </main>
 
