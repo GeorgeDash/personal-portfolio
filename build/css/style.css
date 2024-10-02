@@ -607,10 +607,6 @@ video {
   margin-bottom: 1.75rem;
 }
 
-.mr-5 {
-  margin-right: 1.25rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -631,8 +627,8 @@ video {
   height: 4rem;
 }
 
-.h-50-p {
-  height: 50%;
+.h-40-p {
+  height: 40%;
 }
 
 .h-\[120vh\] {
@@ -879,10 +875,22 @@ video {
   transition-duration: 375ms;
 }
 
-/* Custom scrollbar */
+/* Make default scrollbar invisible */
 
 ::-webkit-scrollbar{
   display: none;
+}
+
+/* Custom scrollbar */
+
+#reading-bar{
+  --progress: 0;
+  height: 4px;
+  width: var(--progress);
+  background-color: #424b54;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 .after\:absolute::after {

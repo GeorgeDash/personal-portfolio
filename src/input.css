@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom scrollbar */
+/* Make default scrollbar invisible */
 ::-webkit-scrollbar{
     display: none;
+}
+
+/* Custom scrollbar */
+#reading-bar{
+    --progress: 0;
+    height: 4px;
+    width: var(--progress);
+    background-color: #424b54;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
