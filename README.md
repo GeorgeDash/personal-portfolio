@@ -1,4 +1,5 @@
 Check out my portfolio! -> https://georgedash.github.io
+=
 
 This is my third project and is my first **serious** one, because here I can truly show my skills in HTML and CSS (and a bit of JavaScript, too).
 <br>
