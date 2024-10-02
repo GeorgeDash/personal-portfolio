@@ -4,15 +4,5 @@
 
 /* Custom scrollbar */
 ::-webkit-scrollbar{
-    width: 10px;
-}
-
-::-webkit-scrollbar-track{
-    background-color: transparent;
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb{
-    background: #424b54;
-    border-radius: 5px;
+    display: none;
 }

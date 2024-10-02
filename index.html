@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en" class="scroll-smooth">
     <head>
@@ -34,7 +33,8 @@
             <nav
                 class="border-soild sm flex rounded-full bg-dark-cadet-gray p-3 sm:ml-15-r sm:w-75-p sm:justify-evenly sm:text-sm sm-m:ml-25-p sm-l:ml-15-r sm-l:w-80-p sm-l:text-md md:ml-0 md:w-fit md:justify-center md:space-x-10">
                 <a href="#about_me"
-                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black">About me</a>
+                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black">About
+                    me</a>
                 <a href="#projects"
                     class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black">Projects</a>
                 <a href="https://youtu.be/uHgt8giw1LY?si=7jQR4ReXg8plooSC" target="_blank"
@@ -55,7 +55,7 @@
                 </p>
             </section>
             <section id="about_me"
-                class="flex h-screen w-full flex-col items-center justify-center text-center sm:flex-1 md:flex-auto relative overflow-x-hidden ">
+                class="flex h-[120vh] w-screen flex-col items-center justify-center text-center sm:flex-1 md:flex-auto relative overflow-x-hidden lg:pb-20-p">
                 <div class="relative sm:w-full sm-m:w-90-p sm-l:w-75-p md:w-50-p lg:w-35-p" id="social_media"
                     data-aos="fade-down" data-aos-delay="500" data-aos-duration="800">
                     <div class="mb-7 flex h-16 items-center justify-evenly space-x-5 rounded-full border text-5xl sm:mt-14">
@@ -83,34 +83,56 @@
                         </a>
                     </div>
                 </div>
-                <h2 class="pb-3 text-4xl" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
+                <h2 class="pb-3 text-4xl font-semibold" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
                     GeorgeDash
                 </h2>
-                <h3 class="text-2xl italic" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
+                <h3 class="text-2xl italic mb-5" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
                     student, ballet dancer, programmer, singer (kinda)
                 </h3>
-                <div class="flex flex-row-reverse max-[920px]:flex-col-reverse justify-center items-center">
-                    <img src="build/img/boy.png" alt="lying boy" data-aos="fade-left"
-                    data-aos-delay="500" data-aos-duration="800"/>
-                    <p class="text-lg sm:w-90-p min-[576px]:w-75-p text-justify p-10 rounded-xl shadow-2xl" data-aos="fade-right"
-                        data-aos-delay="500" data-aos-duration="800">
+                <div class="flex md:flex-row-reverse sm:flex-col-reverse justify-center items-center">
+                    <img src="build/img/boy.png" alt="lying boy" data-aos="fade-left" data-aos-delay="500"
+                        data-aos-duration="800" />
+                    <p class="text-lg sm:w-90-p min-[576px]:w-75-p text-justify p-10 rounded-xl shadow-2xl"
+                        data-aos="fade-right" data-aos-delay="500" data-aos-duration="800">
                         Hello everyone!
-                        <br>Like you already know, my name's George and I'm from Bulgaria. I'm actually still a student in 9th grade and
-                        that's why this portfolio is my biggest accomplishment. I have been learning HTML and CSS for around 2 years, but
-                        since I have school, is very hard to find times to practice my programming skills. I'm looking forward to learning
+                        <br>Like you already know, my name's George and I'm from Bulgaria. I'm actually still a student in
+                        9th grade and
+                        that's why this portfolio is my biggest accomplishment. I have been learning HTML and CSS for around
+                        2 years, but
+                        since I have school, is very hard to find times to practice my programming skills. I'm looking
+                        forward to learning
                         JavaScript because I know that it'll bring a lot more functionality to my sites.
-                        <br>Besides programming, I like to read, play video games, go outside and study (LOL, I know, <i>what a nerd</i>) in
+                        <br>Besides programming, I like to read, play video games, go outside and study (LOL, I know,
+                        <i>what a nerd</i>) in
                         my freetime.
                     </p>
                 </div>
             </section>
-            <section id="projects" class="h-screen w-full text-center">
-                <h2 class="pb-3 text-4xl mt-20" data-aos="fade-down" data-aos-delay="500" data-aos-duration="800" data-aos-anchor-placement="bottom-center">
+            <section id="projects" class="h-screen w-screen text-center overflow-hidden pt-20">
+                <h2 class="text-4xl" data-aos="fade-down" data-aos-delay="500" data-aos-duration="800"
+                    data-aos-anchor-placement="bottom-center">
                     Projects
-                </h2> 
-                <h3 class="sm:text-md md:text-xl italic pt-5" data-aos="fade-down" data-aos-duration="800">
-                    Here I'll add my projects (including this portfolio) and I hope I'll be able to make even more in the future!
-                </h3>  
+                </h2>
+                <h3 class="sm:text-md md:text-xl italic pt-3" data-aos="fade-down" data-aos-delay="500"
+                    data-aos-duration="800" data-aos-anchor-placement="bottom-center">
+                    Here I'll add my projects (including this portfolio) and I hope I'll be able to make even more in the
+                    future!
+                </h3>
+                <div class="w-screen h-[75vh] flex justify-center items-center mt-10" data-aos="flip-down" data-aos-delay="500"
+                data-aos-duration="800" id="project_cards">
+                    <div class="w-1/2 h-full m-5">
+                        <img src="https://images.pexels.com/photos/18111570/pexels-photo-18111570/free-photo-of-illuminated-vintage-shop-sign-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full h-50-p bg-cover">
+                        <h2 class="text-xl font-bold mt-5">Login Page</h2>
+                    </div>
+                    <div class="w-1/2 h-full flex-col m-5">
+                        <img src="https://images.pexels.com/photos/18111570/pexels-photo-18111570/free-photo-of-illuminated-vintage-shop-sign-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full h-50-p bg-cover">
+                        <h2 class="text-xl font-bold mt-5">Login Page</h2>
+                    </div>
+                    <div class="w-1/2 h-full flex-col m-5">
+                        <img src="https://images.pexels.com/photos/18111570/pexels-photo-18111570/free-photo-of-illuminated-vintage-shop-sign-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full h-50-p bg-cover">
+                        <h2 class="text-xl font-bold mt-5">Login Page</h2>
+                    </div>
+                </div>
             </section>
         </main>
 
