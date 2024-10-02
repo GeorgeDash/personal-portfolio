@@ -643,6 +643,11 @@ video {
   height: 100vh;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1015,10 +1020,6 @@ video {
 
   .sm\:justify-evenly {
     justify-content: space-evenly;
-  }
-
-  .sm\:pt-20-p {
-    padding-top: 20%;
   }
 
   .sm\:pt-10-p {
