@@ -114,33 +114,40 @@
                     </p>
                 </div>
             </section>
-            <section id="projects" class="h-screen w-screen text-center overflow-hidden pt-20">
-                <h2 class="text-4xl" data-aos="fade-down" data-aos-delay="500" data-aos-duration="800"
+            <section id="projects" class="sm:h-[200vh] sm-l:h-[250vh] md:h-screen w-screen text-center overflow-hidden pt-20">
+                <div class="" data-aos="fade-down" data-aos-delay="500" data-aos-duration="800"
                     data-aos-anchor-placement="bottom-center">
-                    Projects
-                </h2>
-                <h3 class="sm:text-md md:text-xl italic pt-3" data-aos="fade-down" data-aos-delay="500"
-                    data-aos-duration="800" data-aos-anchor-placement="bottom-center">
-                    Here I'll add my projects (including this portfolio) and I hope I'll be able to make even more in the
-                    future!
-                </h3>
-                <div class="w-screen h-[75vh] flex justify-center items-center mt-10" data-aos="flip-down" data-aos-delay="500"
+                    <h2 class="text-4xl">
+                        Projects
+                    </h2>
+                    <h3 class="sm:text-md md:text-xl italic pt-3">
+                        Here I'll add my projects (including this portfolio) and I hope I'll be able to make even more in the
+                        future!
+                    </h3>
+                </div>
+                <div class="w-screen lg:h-90-p md:h-screen flex sm:flex-col md:flex-row justify-center sm:items-center md:items-start mt-10" data-aos="flip-down" data-aos-delay="500"
                 data-aos-duration="800" id="project_cards">
-                    <div class="w-1/2 h-full m-5">
-                        <img src="build/screenshots/first-project.png" alt="" class="w-full h-40-p bg-cover">
+                    <div class="md:w-1/2 sm:w-90-p h-full m-5 flex flex-col">
+                        <img src="build/screenshots/first-project.png" class="w-full h-auto bg-cover rounded-xl shadow-xl">
                         <h2 class="text-xl font-bold mt-5">My First Project</h2>
+                        <p class="w-full"   >This is my first website made with TailWindCSS (and a bit of JS - Java Script)! I wanna give all credits to Dave Gray for the very professional-made tutorial on YouTube for begginers!</p>
+                        <a href="https://github.com/GeorgeDash/My-First-Project-" target="_blank" class="text-gray-500 hover:text-gray-700 transition-colors duration-300">See more...</a>
                     </div>
-                    <div class="w-1/2 h-full flex-col m-5">
-                        <img src="build/screenshots/login-page.png" alt="" class="w-full h-40-p bg-cover">
+                    <div class="md:w-1/2 sm:w-90-p h-full flex flex-col m-5">
+                        <img src="build/screenshots/login-page.png" class="w-full h-auto bg-cover rounded-xl shadow-xl">
                         <h2 class="text-xl font-bold mt-5">Login Page</h2>
+                        <p>This is my second and most recent project - a responsive login page!</p>
+                        <a href="https://github.com/GeorgeDash/login-page" target="_blank" class="text-gray-500 hover:text-gray-700 transition-colors duration-300">See more...</a>
                     </div>
-                    <div class="w-1/2 h-full flex-col m-5">
-                        <img src="https://images.pexels.com/photos/18111570/pexels-photo-18111570/free-photo-of-illuminated-vintage-shop-sign-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full h-40-p bg-cover">
+                    <div class="md:w-1/2 sm:w-90-p h-full flex-col m-5">
+                        <img src="build/screenshots/personal-portfolio.png" class="w-full h-auto bg-cover rounded-xl shadow-xl">
                         <h2 class="text-xl font-bold mt-5">Personal Portfolio</h2>
+                        <a href="https://github.com/GeorgeDash/personal-portfolio" target="_blank" class="text-gray-500 hover:text-gray-700 transition-colors duration-300">See more...</a>
                     </div>
                 </div>
             </section>
         </main>
+        <footer></footer>
 
         <!-- AOS Library -->
         <script>
