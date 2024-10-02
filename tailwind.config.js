@@ -60,6 +60,9 @@ module.exports = {
         "75-p": "75%",
         "51-px": "3.188rem"
       },
+      boxShadow: {
+        "3xl": "rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+      }
     },
   },
   plugins: ["prettier-plugin-tailwindcss"],
