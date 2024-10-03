@@ -13,14 +13,8 @@ module.exports = {
       fontSize: {
         md: ['1.063rem', '1.5rem']
       },
-      lineHeight: {
-        "11": "1.313rem"
-      },
-      backgroundImage:{
-        'homepage': "url('../img/homepage.jpg')",
-      },
       fontFamily: {
-        "sans": "'Spline Sans'",
+        "sans": "'Inter'",
       },
       width: {
         "40-p": "40%",
