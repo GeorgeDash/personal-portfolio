@@ -27,9 +27,13 @@
          <script src="build/js/readingProgressBar.js" defer></script>
         <!-- Reading scrollbar -->
 
+        <!-- Theme switch -->
+         <script src="build/js/themeSwitch.js" defer></script>
+        <!-- Theme switch -->
+
         <title>Personal Portfolio</title>
     </head>
-    <body class="bg-cadet-gray bg-cover bg-center bg-no-repeat h-screen w-screen overflow-x-hidden">
+    <body class="bg-cadet-gray bg-cover bg-center bg-no-repeat h-screen w-screen overflow-x-hidden dark:bg-charcoal dark:text-white">
         <div id="reading-bar"></div>
         <header class="z-10 flex w-screen items-center justify-center p-4 fixed">
             <a href="index.html" id="navbar_brand">
@@ -37,17 +41,25 @@
                     class="md:h-51-p absolute left-2 top-4 z-50 rounded-full sm:h-11 sm-l:h-12" />
             </a>
             <nav
-                class="border-soild sm flex rounded-full bg-dark-cadet-gray p-3 sm:ml-15-r sm:w-75-p sm:justify-evenly sm:text-sm sm-m:ml-25-p sm-l:ml-15-r sm-l:w-80-p sm-l:text-md md:ml-0 md:w-fit md:justify-center md:space-x-10">
+                class="border-soild sm flex rounded-full bg-dark-cadet-gray p-3 sm:ml-15-r sm:w-75-p sm:justify-evenly sm:text-sm sm-m:ml-25-p sm-l:ml-15-r sm-l:w-80-p sm-l:text-md md:ml-0 md:w-fit md:justify-center md:space-x-10 z-20 dark:bg-[#424754]">
                 <a href="#about_me"
-                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black">About
+                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full after:bg-black dark:text-white dark:after:bg-white">About
                     me</a>
                 <a href="#projects"
-                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black">Projects</a>
+                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full after:bg-black dark:text-white dark:after:bg-whit">Projects</a>
                 <a href="https://youtu.be/uHgt8giw1LY?si=7jQR4ReXg8plooSC" target="_blank"
-                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:after:bg-black">
+                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full after:bg-black dark:text-white dark:after:bg-white">
                     <i>???</i>
                 </a>
             </nav>
+            <button class="hidden h-14 w-14 border fixed right-2 md:flex justify-center items-center rounded-full border-charcoal dark:border-dark-cadet-gray text-2xl transition-all duration-500" id="theme-switch">
+                <i
+                    class="bx bxs-moon moon-icon cursor-pointer text-charcoal transition-all duration-500"
+                ></i>
+                <i
+                    class="bx bxs-sun sun-icon cursor-pointer transition-all duration-500 dark:text-cadet-gray"
+                ></i>
+            </button>
         </header>
         <main class="mx-auto flex flex-col items-center">
             <section id="home" class="relative mt-20 flex h-screen w-screen flex-col items-center justify-center"
@@ -97,7 +109,7 @@
                 </h3>
                 <div class="flex md:flex-row-reverse sm:flex-col-reverse justify-center items-center">
                     <img src="build/img/boy.png" alt="lying boy" data-aos="fade-left" data-aos-delay="500"
-                        data-aos-duration="800" />
+                        data-aos-duration="800"/>
                     <p class="text-lg sm:w-90-p min-[576px]:w-75-p text-justify p-10 rounded-xl shadow-2xl"
                         data-aos="fade-right" data-aos-delay="500" data-aos-duration="800">
                         Hello everyone!
@@ -128,19 +140,19 @@
                 <div class="w-screen lg:h-90-p md:h-screen flex sm:flex-col md:flex-row justify-center sm:items-center md:items-start mt-10" data-aos="flip-down" data-aos-delay="500"
                 data-aos-duration="800" id="project_cards">
                     <div class="md:w-1/2 sm:w-90-p h-full sm:mb-20 md:m-5 flex flex-col">
-                        <img src="build/screenshots/first-project.png" class="w-full h-auto bg-cover rounded-xl shadow-3xl">
+                        <img src="build/screenshots/first-project.png" class="w-full h-auto bg-cover rounded-xl shadow-3xl" loading="lazy">
                         <h2 class="text-xl font-bold mt-5">My First Project</h2>
                         <p class="w-full"   >This is my first website made with TailWindCSS (and a bit of JS - Java Script)! I wanna give all credits to Dave Gray for the very professional-made tutorial on YouTube for begginers!</p>
                         <a href="https://github.com/GeorgeDash/My-First-Project-" target="_blank" class="text-gray-500 hover:text-gray-700 transition-colors duration-300">See more...</a>
                     </div>
                     <div class="md:w-1/2 sm:w-90-p h-full flex flex-col m-5">
-                        <img src="build/screenshots/login-page.png" class="w-full h-auto bg-cover rounded-xl shadow-3xl">
+                        <img src="build/screenshots/login-page.png" class="w-full h-auto bg-cover rounded-xl shadow-3xl" loading="lazy">
                         <h2 class="text-xl font-bold mt-5">Login Page</h2>
                         <p>This is my second and most recent project - a responsive login page!</p>
                         <a href="https://github.com/GeorgeDash/login-page" target="_blank" class="text-gray-500 hover:text-gray-700 transition-colors duration-300">See more...</a>
                     </div>
                     <div class="md:w-1/2 sm:w-90-p h-full flex-col m-5">
-                        <img src="build/screenshots/personal-portfolio.png" class="w-full h-auto bg-cover rounded-xl shadow-3xl">
+                        <img src="build/screenshots/personal-portfolio.png" class="w-full h-auto bg-cover rounded-xl shadow-3xl" loading="lazy">
                         <h2 class="text-xl font-bold mt-5">Personal Portfolio</h2>
                         <a href="https://github.com/GeorgeDash/personal-portfolio" target="_blank" class="text-gray-500 hover:text-gray-700 transition-colors duration-300">See more...</a>
                     </div>
@@ -148,7 +160,7 @@
             </section>
         </main>
         <footer class="w-screen h-16 flex items-center justify-center">
-            <p class="w-fit p-4 rounded-full bg-dark-cadet-gray sm:text-sm md:text-lg mb-5"><b>© 2024 GeorgeDash. All rights reserved.</b></p>
+            <p class="w-fit p-4 rounded-full bg-dark-cadet-gray dark:bg-[#424754] sm:text-sm md:text-lg mb-5"><b>© 2024 GeorgeDash. All rights reserved.</b></p>
         </footer>
 
         <!-- AOS Library -->

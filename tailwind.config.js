@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./*.html"],
+  darkMode: "class",
   theme: {
     extend: {
       screens: {
@@ -49,7 +50,8 @@ module.exports = {
       },
       colors: {
         "cadet-gray": "#8da1b9",
-        "dark-cadet-gray": "#7a92ad"
+        "dark-cadet-gray": "#7a92ad",
+        "charcoal": "#424b54"
       },
       transitionProperty: {
         'width': 'width'

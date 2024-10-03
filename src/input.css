@@ -16,4 +16,9 @@
     position: fixed;
     top: 0;
     z-index: 1;
+}   
+
+/* Custom class for hiding switch icons */
+.display-none{
+    display: none !important;
 }
