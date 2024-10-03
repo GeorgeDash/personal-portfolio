@@ -154,7 +154,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: 'Spline Sans';
+  font-family: 'Inter';
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -1265,10 +1265,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mb-5-p {
-    margin-bottom: 5%;
-  }
-
   .lg\:h-90-p {
     height: 90%;
   }
@@ -1283,10 +1279,6 @@ video {
 
   .lg\:pb-20-p {
     padding-bottom: 20%;
-  }
-
-  .lg\:pb-5 {
-    padding-bottom: 1.25rem;
   }
 
   .lg\:pb-5-p {
