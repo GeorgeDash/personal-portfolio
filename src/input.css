@@ -16,7 +16,10 @@
     position: fixed;
     top: 0;
     z-index: 1;
-}   
+}
+:is(.dark *) #reading-bar{
+    background-color: #8da1b9;
+}
 
 /* Custom class for hiding switch icons */
 .display-none{

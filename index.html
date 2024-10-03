@@ -24,56 +24,57 @@
         <!-- Always load page on top -->
 
         <!-- Reading scrollbar -->
-         <script src="build/js/readingProgressBar.js" defer></script>
+        <script src="build/js/readingProgressBar.js" defer></script>
         <!-- Reading scrollbar -->
 
         <!-- Theme switch -->
-         <script src="build/js/themeSwitch.js" defer></script>
+        <script src="build/js/themeSwitch.js" defer></script>
         <!-- Theme switch -->
 
         <title>Personal Portfolio</title>
     </head>
-    <body class="bg-cadet-gray bg-cover bg-center bg-no-repeat h-screen w-screen overflow-x-hidden dark:bg-charcoal dark:text-white">
+    <body
+        class="h-screen w-screen overflow-x-hidden bg-cadet-gray bg-cover bg-center bg-no-repeat dark:bg-charcoal dark:text-white">
         <div id="reading-bar"></div>
-        <header class="z-10 flex w-screen items-center justify-center p-4 fixed">
+        <header class="fixed z-10 flex w-screen items-center justify-center p-4">
             <a href="index.html" id="navbar_brand">
                 <img src="build/img/profile.png"
                     class="md:h-51-p absolute left-2 top-4 z-50 rounded-full sm:h-11 sm-l:h-12" />
             </a>
             <nav
-                class="border-soild sm flex rounded-full bg-dark-cadet-gray p-3 sm:ml-15-r sm:w-75-p sm:justify-evenly sm:text-sm sm-m:ml-25-p sm-l:ml-15-r sm-l:w-80-p sm-l:text-md md:ml-0 md:w-fit md:justify-center md:space-x-10 z-20 dark:bg-[#424754]">
+                class="border-soild sm z-20 flex rounded-full bg-dark-cadet-gray p-3 dark:bg-[#1a1e21] sm:ml-15-r sm:w-75-p sm:justify-evenly sm:text-sm sm-m:ml-25-p sm-l:ml-15-r sm-l:w-80-p sm-l:text-md md:ml-0 md:w-fit md:justify-center md:space-x-10">
                 <a href="#about_me"
-                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full after:bg-black dark:text-white dark:after:bg-white">About
+                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:bg-black after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:text-white dark:after:bg-white">About
                     me</a>
                 <a href="#projects"
-                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full after:bg-black dark:text-white dark:after:bg-whit">Projects</a>
+                    class="dark:after:bg-whit relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:bg-black after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:text-white">Projects</a>
                 <a href="https://youtu.be/uHgt8giw1LY?si=7jQR4ReXg8plooSC" target="_blank"
-                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:transition-width after:duration-375 after:content-[''] hover:after:w-full after:bg-black dark:text-white dark:after:bg-white">
+                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:bg-black after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:text-white dark:after:bg-white">
                     <i>???</i>
                 </a>
             </nav>
-            <button class="hidden h-14 w-14 border fixed right-2 md:flex justify-center items-center rounded-full border-charcoal dark:border-dark-cadet-gray text-2xl transition-all duration-500" id="theme-switch">
-                <i
-                    class="bx bxs-moon moon-icon cursor-pointer text-charcoal transition-all duration-500"
-                ></i>
-                <i
-                    class="bx bxs-sun sun-icon cursor-pointer transition-all duration-500 dark:text-cadet-gray"
-                ></i>
+            <button
+                class="fixed right-2 hidden h-14 w-14 items-center justify-center rounded-full border border-charcoal text-2xl dark:border-dark-cadet-gray md:flex"
+                id="theme-switch">
+                <i class="bx bxs-moon moon-icon cursor-pointer text-charcoal transition-all duration-500"></i>
+                <i class="bx bxs-sun sun-icon cursor-pointer transition-all duration-500 dark:text-cadet-gray"></i>
             </button>
         </header>
         <main class="mx-auto flex flex-col items-center">
-            <section id="home" class="relative mt-20 flex h-screen w-screen flex-col items-center justify-center"
+            <section id="home"
+                class="relative mt-20 flex w-screen flex-col items-center justify-center sm:h-screen lg:h-[75vh]"
                 data-aos="zoom-in" data-aos-duration="900" data-aos-delay="400">
-                <h1 class="relative bottom-15-p font-semibold sm:text-4xl sm-m:text-5xl">
+                <h1
+                    class="relative bottom-15-p font-semibold sm:text-4xl sm-m:text-5xl md:text-[72px] lg:text-[80px] xxl:pt-15-p">
                     Hey there! 👋
                 </h1>
-                <p class="relative bottom-10-p text-center text-xl">
+                <p class="relative bottom-10-p text-center sm:text-xl lg:text-2xl lg:pb-5-p">
                     My name's George and I'm (definitely) a professional web
                     designer! 😎
                 </p>
             </section>
             <section id="about_me"
-                class="flex h-[120vh] w-screen flex-col items-center justify-center text-center sm:flex-1 md:flex-auto relative overflow-x-hidden lg:pb-20-p sm:pt-10-p">
+                class="relative flex h-[120vh] w-screen flex-col items-center justify-center overflow-x-hidden text-center sm:flex-1 sm:pt-10-p md:flex-auto lg:pb-20-p">
                 <div class="relative sm:w-full sm-m:w-90-p sm-l:w-75-p md:w-50-p lg:w-35-p" id="social_media"
                     data-aos="fade-down" data-aos-delay="500" data-aos-duration="800">
                     <div class="mb-7 flex h-16 items-center justify-evenly space-x-5 rounded-full border text-5xl sm:mt-14">
@@ -104,63 +105,82 @@
                 <h2 class="pb-3 text-4xl font-semibold" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
                     GeorgeDash
                 </h2>
-                <h3 class="text-2xl italic mb-5" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
+                <h3 class="mb-5 text-2xl italic" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
                     student, ballet dancer, programmer, singer (kinda)
                 </h3>
-                <div class="flex md:flex-row-reverse sm:flex-col-reverse justify-center items-center">
+                <div class="flex items-center justify-center sm:flex-col-reverse md:flex-row-reverse">
                     <img src="build/img/boy.png" alt="lying boy" data-aos="fade-left" data-aos-delay="500"
-                        data-aos-duration="800"/>
-                    <p class="text-lg sm:w-90-p min-[576px]:w-75-p text-justify p-10 rounded-xl shadow-2xl"
+                        data-aos-duration="800" />
+                    <p class="rounded-xl p-10 text-justify text-lg shadow-2xl sm:w-90-p min-[576px]:w-75-p"
                         data-aos="fade-right" data-aos-delay="500" data-aos-duration="800">
                         Hello everyone!
-                        <br>Like you already know, my name's George and I'm from Bulgaria. I'm actually still a student in
-                        9th grade and
-                        that's why this portfolio is my biggest accomplishment. I have been learning HTML and CSS for around
-                        2 years, but
-                        since I have school, is very hard to find times to practice my programming skills. I'm looking
-                        forward to learning
-                        JavaScript because I know that it'll bring a lot more functionality to my sites.
-                        <br>Besides programming, I like to read, play video games, go outside and study (LOL, I know,
-                        <i>what a nerd</i>) in
-                        my freetime.
+                        <br />Like you already know, my name's George and I'm
+                        from Bulgaria. I'm actually still a student in 9th grade
+                        and that's why this portfolio is my biggest
+                        accomplishment. I have been learning HTML and CSS for
+                        around 2 years, but since I have school, is very hard to
+                        find times to practice my programming skills. I'm
+                        looking forward to learning JavaScript because I know
+                        that it'll bring a lot more functionality to my sites.
+                        <br />Besides programming, I like to read, play video
+                        games, go outside and study (LOL, I know,
+                        <i>what a nerd</i>) in my freetime.
                     </p>
                 </div>
             </section>
-            <section id="projects" class="sm:h-[175vh] sm-l:h-[200vh] min-[576px]:h-[235vh] md:h-screen w-screen text-center overflow-hidden pt-20">
+            <section id="projects"
+                class="w-screen overflow-hidden pt-20 text-center sm:h-[175vh] sm-l:h-[200vh] min-[576px]:h-[235vh] md:h-screen">
                 <div class="" data-aos="fade-down" data-aos-delay="500" data-aos-duration="800"
                     data-aos-anchor-placement="bottom-center">
-                    <h2 class="text-4xl">
-                        Projects
-                    </h2>
-                    <h3 class="sm:text-md md:text-xl italic pt-3">
-                        Here I'll add my projects (including this portfolio) and I hope I'll be able to make even more in the
-                        future!
+                    <h2 class="text-4xl">Projects</h2>
+                    <h3 class="pt-3 italic sm:text-md md:text-xl">
+                        Here I'll add my projects (including this portfolio) and
+                        I hope I'll be able to make even more in the future!
                     </h3>
                 </div>
-                <div class="w-screen lg:h-90-p md:h-screen flex sm:flex-col md:flex-row justify-center sm:items-center md:items-start mt-10" data-aos="flip-down" data-aos-delay="500"
-                data-aos-duration="800" id="project_cards">
-                    <div class="md:w-1/2 sm:w-90-p h-full sm:mb-20 md:m-5 flex flex-col">
-                        <img src="build/screenshots/first-project.png" class="w-full h-auto bg-cover rounded-xl shadow-3xl" loading="lazy">
-                        <h2 class="text-xl font-bold mt-5">My First Project</h2>
-                        <p class="w-full"   >This is my first website made with TailWindCSS (and a bit of JS - Java Script)! I wanna give all credits to Dave Gray for the very professional-made tutorial on YouTube for begginers!</p>
-                        <a href="https://github.com/GeorgeDash/My-First-Project-" target="_blank" class="text-gray-500 hover:text-gray-700 transition-colors duration-300">See more...</a>
+                <div class="mt-10 flex w-screen justify-center sm:flex-col sm:items-center md:h-screen md:flex-row md:items-start lg:h-90-p"
+                    data-aos="flip-down" data-aos-delay="500" data-aos-duration="800" id="project_cards">
+                    <div class="flex h-full flex-col sm:mb-20 sm:w-90-p md:m-5 md:w-1/2">
+                        <img src="build/screenshots/first-project.png" class="h-auto w-full rounded-xl bg-cover shadow-3xl"/>
+                        <h2 class="mt-5 text-xl font-bold">My First Project</h2>
+                        <p class="w-full">
+                            This is my first website made with TailWindCSS (and
+                            a bit of JS - Java Script)! I wanna give all credits
+                            to Dave Gray for the very professional-made tutorial
+                            on YouTube for begginers!
+                        </p>
+                        <a href="https://github.com/GeorgeDash/My-First-Project-" target="_blank"
+                            class="text-gray-500 transition-colors duration-300 hover:text-gray-700 dark:text-white dark:hover:text-gray-500">See
+                            more...</a>
                     </div>
-                    <div class="md:w-1/2 sm:w-90-p h-full flex flex-col m-5">
-                        <img src="build/screenshots/login-page.png" class="w-full h-auto bg-cover rounded-xl shadow-3xl" loading="lazy">
-                        <h2 class="text-xl font-bold mt-5">Login Page</h2>
-                        <p>This is my second and most recent project - a responsive login page!</p>
-                        <a href="https://github.com/GeorgeDash/login-page" target="_blank" class="text-gray-500 hover:text-gray-700 transition-colors duration-300">See more...</a>
+                    <div class="m-5 flex h-full flex-col sm:w-90-p md:w-1/2">
+                        <img src="build/screenshots/login-page.png" class="h-auto w-full rounded-xl bg-cover shadow-3xl"/>
+                        <h2 class="mt-5 text-xl font-bold">Login Page</h2>
+                        <p>
+                            This is my second and most recent project - a
+                            responsive login page!
+                        </p>
+                        <a href="https://github.com/GeorgeDash/login-page" target="_blank"
+                            class="text-gray-500 transition-colors duration-300 hover:text-gray-700 dark:text-white dark:hover:text-gray-500">See
+                            more...</a>
                     </div>
-                    <div class="md:w-1/2 sm:w-90-p h-full flex-col m-5">
-                        <img src="build/screenshots/personal-portfolio.png" class="w-full h-auto bg-cover rounded-xl shadow-3xl" loading="lazy">
-                        <h2 class="text-xl font-bold mt-5">Personal Portfolio</h2>
-                        <a href="https://github.com/GeorgeDash/personal-portfolio" target="_blank" class="text-gray-500 hover:text-gray-700 transition-colors duration-300">See more...</a>
+                    <div class="m-5 h-full flex-col sm:w-90-p md:w-1/2">
+                        <img src="build/screenshots/personal-portfolio.png"
+                            class="h-auto w-full rounded-xl bg-cover shadow-3xl" />
+                        <h2 class="mt-5 text-xl font-bold">
+                            Personal Portfolio
+                        </h2>
+                        <a href="https://github.com/GeorgeDash/personal-portfolio" target="_blank"
+                            class="text-gray-500 transition-colors duration-300 hover:text-gray-700 dark:text-white dark:hover:text-gray-500">See
+                            more...</a>
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="w-screen h-16 flex items-center justify-center">
-            <p class="w-fit p-4 rounded-full bg-dark-cadet-gray dark:bg-[#424754] sm:text-sm md:text-lg mb-5"><b>© 2024 GeorgeDash. All rights reserved.</b></p>
+        <footer class="flex h-16 w-screen items-center justify-center">
+            <p class="mb-5 w-fit rounded-full bg-dark-cadet-gray p-4 dark:bg-[#1a1e21] sm:text-sm md:text-lg">
+                <b>© 2024 GeorgeDash. All rights reserved.</b>
+            </p>
         </footer>
 
         <!-- AOS Library -->

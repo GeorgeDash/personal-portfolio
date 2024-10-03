@@ -8,6 +8,7 @@ module.exports = {
         "sm": "320px",
         "sm-m": "375px",
         "sm-l": "425px",
+        "xxl": "1440px"
       },
       fontSize: {
         md: ['1.063rem', '1.5rem']
@@ -31,6 +32,7 @@ module.exports = {
       },
       spacing: {
         "15-r": "3.75rem",
+        "5-p": "5%",
         "10-p": "10%",
         "15-p": "15%",
         "20-p": "20%",
