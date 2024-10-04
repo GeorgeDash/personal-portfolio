@@ -997,6 +997,11 @@ video {
   transition-duration: 150ms;
 }
 
+.after\:duration-300::after {
+  content: var(--tw-content);
+  transition-duration: 300ms;
+}
+
 .after\:duration-375::after {
   content: var(--tw-content);
   transition-duration: 375ms;
@@ -1102,10 +1107,6 @@ video {
 
   .sm\:flex-col {
     flex-direction: column;
-  }
-
-  .sm\:flex-col-reverse {
-    flex-direction: column-reverse;
   }
 
   .sm\:items-center {
@@ -1229,10 +1230,6 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:flex-row-reverse {
-    flex-direction: row-reverse;
   }
 
   .md\:items-start {

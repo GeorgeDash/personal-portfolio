@@ -44,7 +44,7 @@
             <nav
                 class="border-soild sm z-20 flex rounded-full bg-dark-cadet-gray p-3 dark:bg-[#1a1e21] sm:ml-15-r sm:w-75-p sm:justify-evenly sm:text-sm sm-m:ml-25-p sm-l:ml-15-r sm-l:w-80-p sm-l:text-md md:ml-0 md:w-fit md:justify-center md:space-x-10">
                 <a href="#about_me"
-                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:bg-black after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:text-white dark:after:bg-white">About
+                    class="relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:bg-black after:transition-width after:duration-300 after:content-[''] hover:after:w-full">About
                     me</a>
                 <a href="#projects"
                     class="dark:after:bg-whit relative after:absolute after:bottom-0 after:left-0 after:h-2-p after:w-0 after:bg-black after:transition-width after:duration-375 after:content-[''] hover:after:w-full dark:text-white">Projects</a>
@@ -108,9 +108,6 @@
                 <h3 class="mb-5 text-2xl italic" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
                     student, ballet dancer, programmer, singer (kinda)
                 </h3>
-                <div class="flex items-center justify-center sm:flex-col-reverse md:flex-row-reverse">
-                    <img src="build/img/boy.png" alt="lying boy" data-aos="fade-left" data-aos-delay="500"
-                        data-aos-duration="800" />
                     <p class="rounded-xl p-10 text-justify text-lg shadow-2xl sm:w-90-p min-[576px]:w-75-p"
                         data-aos="fade-right" data-aos-delay="500" data-aos-duration="800">
                         Hello everyone!
@@ -126,12 +123,10 @@
                         games, go outside and study (LOL, I know,
                         <i>what a nerd</i>) in my freetime.
                     </p>
-                </div>
             </section>
             <section id="projects"
                 class="w-screen overflow-hidden pt-20 text-center sm:h-[175vh] sm-l:h-[200vh] min-[576px]:h-[235vh] md:h-screen">
-                <div class="" data-aos="fade-down" data-aos-delay="500" data-aos-duration="800"
-                    data-aos-anchor-placement="bottom-center">
+                <div class="" data-aos="fade-down" data-aos-delay="500" data-aos-duration="800">
                     <h2 class="text-4xl">Projects</h2>
                     <h3 class="pt-3 italic sm:text-md md:text-xl">
                         Here I'll add my projects (including this portfolio) and
@@ -188,5 +183,17 @@
             AOS.init()
         </script>
         <!-- AOS Library -->
+
+        <!-- Remove AOS from mobile -->
+         <script>
+            window.onload = function () {
+                    if (window.innerWidth < 768) {
+                        document.querySelectorAll('[data-aos]').forEach(elem => {
+                            elem.removeAttribute('data-aos'); // Remove AOS attribute for mobile
+                        });
+                    }
+                };
+         </script>
+        <!-- Remove AOS from mobile -->
     </body>
 </html>
